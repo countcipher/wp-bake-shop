@@ -1,0 +1,417 @@
+/*
+purple: #B14B87 177,75,135
+accent: #CE76AA
+*/
+/*===GENERAL===*/
+@font-face{
+    font-family: Satisfy;
+    src: url("../fonts/Satisfy/Satisfy-Regular.ttf");
+}
+@font-face{
+    font-family: 'BioRhyme Expanded';
+    src: url("../fonts/BioRhyme_Expanded/BioRhymeExpanded-Regular.ttf");
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+section{
+    overflow: hidden;
+}
+div.scallop-purple-down{
+    height: 35px;
+    background-image: url("../img/scallopBorder0.png");
+    background-repeat: repeat-x;
+    z-index: 200;
+    position: relative;
+    overflow: hidden;
+}
+div.scallop-purple-up{
+    height: 35px;
+    background-image: url("../img/purple_up.png");
+    background-repeat: repeat-x;
+    position: relative;
+    overflow: hidden;
+    z-index: 200;
+    top: -10px;
+}
+div.scallop-white-up{
+    height: 35px;
+    background-image: url("../img/scallopBorder1.png");
+    background-repeat: repeat-x;
+    z-index: 200;
+    position: relative;
+    top: -44px;
+    overflow: hidden;
+}
+div.scallop-white-down{
+    height: 35px;
+    background-image: url("../img/scallopBorder2.png");
+    background-repeat: repeat-x;
+    z-index: 200;
+    position: relative;
+    overflow: hidden;
+    bottom: -30px;
+}
+/*===HEADER===*/
+#header{
+    text-align: center !important;
+    background: #B14B87;
+    overflow: hidden;
+    font-family: 'BioRhyme Expanded';
+    height: 40px;
+}
+#header h2{
+    font-size: 20px;
+}
+/*===HERO===*/
+#small-hero{
+    display: none;
+}
+#hero{
+    overflow: hidden;
+    position: relative;
+    top: -15px;
+    text-align: center !important;
+}
+.hero-cta{
+    display: inline-block;
+    background: #B14B87;
+    font-size: 35px;
+    padding: 25px 45px;
+    border-radius: 10px;
+    cursor: pointer;
+     transition: all .7s;
+}
+.hero-cta:hover{
+    background: #CE76AA;
+}
+section#hero #carousel-example-generic{
+    text-align: center !important;
+    margin: auto !important;
+    display: block !important;
+    width: 100%;
+}
+section#hero #carousel-example-generic carousel-inner{
+    margin: auto;
+}
+.carousel{
+    max-height: 600px;
+    overflow: hidden;
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel img{
+    margin: auto;
+    width: 100%;
+}
+.hero-message{
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    top: 25px;
+    font-family: 'Satisfy', cursive;
+    color: #fff;
+    padding-top: 25px;
+    text-shadow: 10px 10px 10px #000;
+}
+.hero-message h1{
+    font-size: 80px;
+}
+.hero-message h2{
+    font-size: 50px;
+}
+/*===GALLERY===*/
+#gallery{
+    text-align: center;
+    background: #fff;
+    background-size: cover;
+    overflow: hidden;
+}
+#gallery h1{
+    font-family: 'BioRhyme Expanded';
+}
+#gallery .gallery-post{
+    width: 32%;
+    max-width: 450px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7em;
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+}
+#gallery .gallery-post img{
+    width: 100%;
+    transition: .5s ease-in-out all;
+}
+#gallery .gallery-wrapper{
+    overflow: hidden;
+    border: 15px solid transparent;
+    border-image: url('../img/borderFrame0.png') 25% round; 
+}
+#gallery .gallery-post:hover .gallery-wrapper img{
+    transform: scale(1.5);
+}
+#gallery .gallery-post p{
+    padding: 5px 10px;
+    font-size: 20px;
+}
+#gallery .gallery-title{
+    display: block;
+    background: #B14B87;
+    color: #fff;
+    width: 90%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-family: BioRhyme Expanded;
+    font-size: 20px;
+    margin: 10px auto;
+    /*text-shadow: 10px 10px 10px #000;*/
+}
+.gallery-divider{
+    display: none;
+}
+/*===ABOUT===*/
+#about{
+    background: url("../img/donuts0.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+#about .profile{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: rgba(177,75,35,.5);
+    border-radius: 20px;
+    max-width: 1350px;
+    box-shadow: 10px 10px 30px #000;
+}
+#about .profile h1{
+    color: #fff;
+    font-family: Satisfy;
+}
+#about .profile img{
+    height: 170px;
+    border: double 10px #fff;
+    border-radius: 100%;
+}
+#about .profile p{
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'BioRhyme Expanded';
+}
+/*===CTA===*/
+#cta{
+    background:  #B14B87;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    top: -13px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+#cta h2{
+    font-family: Satisfy;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+#cta img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    max-width: 398px;
+}
+/*===FOOTER===*/
+#footer{
+   text-align: center;
+}
+#footer a{
+    display: block;
+    margin-bottom: 5px;
+    
+}
+#footer h3{
+    display: inline;
+}
+#footer img{
+    height: 50px;
+}
+@media(max-width: 848px){
+    /*===HEADER===*/
+#header{
+    text-align: center !important;
+    background: #B14B87;
+    overflow: hidden;
+    font-family: 'BioRhyme Expanded';
+    height: 20px;
+}
+#header h2{
+    font-size: 20px;
+}
+/*===HERO===*/
+#hero{
+    overflow: hidden;
+    position: relative;
+    top: -15px;
+    text-align: center !important;
+}
+.hero-cta{
+    font-size:25px;
+    padding: 15px 45px;
+}
+.carousel{
+    max-height: 600px;
+    overflow: hidden;
+}
+.hero-message{
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    top: 5px;
+    font-family: 'Satisfy', cursive;
+    color: #fff;
+    padding-top: 0px;
+    text-shadow: 10px 10px 10px #000;
+}
+.hero-message h1{
+    font-size: 50px;
+}
+.hero-message h2{
+    font-size: 30px;
+}
+}
+@media(max-width: 900px){
+div.scallop-white-up{
+    top: -35px;
+}
+#gallery h1{
+    font-size: 30px;
+}
+#gallery .gallery-post{
+    width: 98%;
+    padding: 0px;
+    display: block;
+    margin: 0px auto 25px;
+}
+#gallery .gallery-post img{
+    width: 100%;
+    transition: .5s ease-in-out all;
+}
+#gallery .gallery-wrapper{
+    overflow: hidden;
+    border: 15px solid transparent;
+    border-image: url('../img/borderFrame0.png') 25% round; 
+}
+#gallery .gallery-title{
+    display: block;
+    background: #B14B87;
+    color: #fff;
+    width: 98%;
+    border-radius: 10px;
+    font-family: BioRhyme Expanded;
+    font-size: 20px;
+    margin: 10px auto;
+}
+.gallery-divider{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #CC73A7;
+    margin: auto;
+}
+}
+@media(max-width: 768px){
+#hero{
+    display: none;
+}
+#small-hero{
+    display: block;
+    height: 90%;
+    background: url("../img/macarons-2548827_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -20px;
+    min-height: 456px;
+}
+#small-hero{
+    text-align: center;
+}
+#small-hero .hero-message{
+    padding-top: 100px;
+}
+#gallery{
+    padding: 0 10px;
+}
+#gallery h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#about{
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+#about .profile{
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+#about .profile h1{
+    color: #fff;
+    font-family: Satisfy;
+    font-size: 25px;
+}
+#about .profile img{
+    height: 150px;
+    border: double 10px #fff;
+    border-radius: 100%;
+}
+#about .profile p{
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-family: 'BioRhyme Expanded';
+}
+#cta{ 
+    padding-bottom: 15px;
+    color: #fff;
+}
+#cta h2{
+    font-family: Satisfy;
+    font-size: 35px;
+    text-align: center;
+}
+#cta img{
+    height: auto;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+#footer{
+   text-align: center;
+}
+#footer h3{
+    display: inline;
+    font-size: 20px;
+}
+#footer img{
+    height: 30px;
+}
+}
